@@ -43,21 +43,22 @@ if code and date:
         - Volume: 거래량
         ''')
 
-# 특정 경로에 있는 이미지 파일 읽기
-image_path_n = 'normal.png'  # 지정된 이미지 파일 경로
+# 이미지 파일 경로
+image_path_n = 'normal.png'
+image_path_z = 'zoker.png'
+image_path = 'up.jpg'
+
+# 이미지 파일 읽기
 image_n = Image.open(image_path_n)
-
-image_path_z = 'zoker.png'  # 지정된 이미지 파일 경로
 image_z = Image.open(image_path_z)
-
-image_path = 'up.jpg'  # 지정된 이미지 파일 경로
 image = Image.open(image_path)
 
 # 라디오 선택 버튼
 mbti = st.radio(
     'zoker의 상태는 어떤가요?',
     ('기본', '흑화', 'yellow'),
-    index=2)
+    index=2
+)
 
 if mbti == '기본':
     st.write(':blue[give me mandoo]')
@@ -69,5 +70,4 @@ else:
     st.write(":red[hellow mr zo]:grey_exclamation:")
 
 st.title('hellow mr zo')
-
 st.image(image, caption='Uploaded Image.', use_column_width=True)
