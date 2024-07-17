@@ -1,12 +1,6 @@
 streamlit
 pandas
 numpy
-streamlit
-pandas
 matplotlib
 seaborn
-numpy
-streamlit
-FinanceDataReader
-datetime
-time
+finance-datareader
