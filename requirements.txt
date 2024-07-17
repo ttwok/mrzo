@@ -1,7 +1,6 @@
 streamlit
 pandas
 numpy
-import
 streamlit
 pandas
 matplotlib
