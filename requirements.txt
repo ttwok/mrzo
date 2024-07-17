@@ -5,3 +5,4 @@ matplotlib
 seaborn
 finance-datareader
 beautifulsoup4
+plotly
