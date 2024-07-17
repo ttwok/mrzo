@@ -2,15 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
-import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
-import streamlit as st
 import FinanceDataReader as fdr
 import datetime
-import time
 
 st.title('종목 차트 검색')
 
@@ -45,22 +40,18 @@ if code and date:
         - Low: 저가
         - Close: 종가
         - Adj Close: 수정 종가
-        - Volumn: 거래량
+        - Volume: 거래량
         ''')
-
 
 # 특정 경로에 있는 이미지 파일 읽기
 image_path_n = 'normal.png'  # 지정된 이미지 파일 경로
 image_n = Image.open(image_path_n)
 
-# 특정 경로에 있는 이미지 파일 읽기
 image_path_z = 'zoker.png'  # 지정된 이미지 파일 경로
 image_z = Image.open(image_path_z)
 
-# 특정 경로에 있는 이미지 파일 읽기
 image_path = 'up.jpg'  # 지정된 이미지 파일 경로
 image = Image.open(image_path)
-
 
 # 라디오 선택 버튼
 mbti = st.radio(
@@ -77,21 +68,6 @@ elif mbti == '흑화':
 else:
     st.write(":red[hellow mr zo]:grey_exclamation:")
 
-
 st.title('hellow mr zo')
 
-
-# 특정 경로에 있는 이미지 파일 읽기
-image_path_n = 'normal.png'  # 지정된 이미지 파일 경로
-image_n = Image.open(image_path_n)
-
-# 특정 경로에 있는 이미지 파일 읽기
-image_path_z = 'zoker.png'  # 지정된 이미지 파일 경로
-image_z = Image.open(image_path_z)
-
-# 특정 경로에 있는 이미지 파일 읽기
-image_path = 'up.jpg'  # 지정된 이미지 파일 경로
-image = Image.open(image_path)
-
 st.image(image, caption='Uploaded Image.', use_column_width=True)
-
